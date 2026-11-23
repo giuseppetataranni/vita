@@ -8,14 +8,12 @@ enabled = false
 
 # Valori NON segreti (possono stare su GitHub). I segreti si caricano con "wrangler secret put".
 [vars]
-# Indirizzo base della tua app, senza /vita e senza / finale. Solo questa origine potrà usare il server.
-ALLOWED_ORIGIN = "https://TUO-UTENTE.github.io"
-# Identifica chi invia le notifiche ai server di Apple: usa l'indirizzo della tua app (nessuna email pubblica)
-VAPID_SUBJECT = "https://TUO-UTENTE.github.io/vita/"
+ALLOWED_ORIGIN = "https://giuseppetataranni.github.io"
+VAPID_SUBJECT = "https://giuseppetataranni.github.io/vita/"
 
 [triggers]
 crons = ["* * * * *"]
 
 [[kv_namespaces]]
 binding = "STORE"
-id = "INCOLLA-QUI-ID-DEL-KV"
+id = "84e86a28bcd8474282455f9e4ba7d0d5"
