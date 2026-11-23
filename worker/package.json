@@ -1,0 +1,13 @@
+{
+  "name": "vita-push",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "vapid": "node scripts/gen-vapid.mjs",
+    "deploy": "wrangler deploy",
+    "logs": "wrangler tail"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}

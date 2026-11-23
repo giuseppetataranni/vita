@@ -1,0 +1,21 @@
+name = "vita-push"
+main = "src/index.js"
+compatibility_date = "2025-09-01"
+
+# Nessun registro permanente delle richieste
+[observability]
+enabled = false
+
+# Valori NON segreti (possono stare su GitHub). I segreti si caricano con "wrangler secret put".
+[vars]
+# Indirizzo base della tua app, senza /vita e senza / finale. Solo questa origine potrà usare il server.
+ALLOWED_ORIGIN = "https://TUO-UTENTE.github.io"
+# Identifica chi invia le notifiche ai server di Apple: usa l'indirizzo della tua app (nessuna email pubblica)
+VAPID_SUBJECT = "https://TUO-UTENTE.github.io/vita/"
+
+[triggers]
+crons = ["* * * * *"]
+
+[[kv_namespaces]]
+binding = "STORE"
+id = "INCOLLA-QUI-ID-DEL-KV"

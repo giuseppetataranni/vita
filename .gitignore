@@ -1,0 +1,13 @@
+node_modules
+dist
+certs
+public/icons/*.png
+public/splash
+worker/.wrangler
+worker/node_modules
+# Mai pubblicare backup, esportazioni o segreti
+vita-backup-*.json
+*.csv
+*.ics
+.env
+worker/.dev.vars

@@ -1,0 +1,23 @@
+{
+  "name": "vita",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "icons": "node scripts/gen-icons.mjs",
+    "prebuild": "node scripts/gen-icons.mjs",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "TZ=Europe/Rome vitest run"
+  },
+  "dependencies": {
+    "dexie": "^4.4.7",
+    "hash-wasm": "^4.13.0"
+  },
+  "devDependencies": {
+    "sharp": "^0.34.5",
+    "vite": "^6.4.6",
+    "vitest": "^3.2.7"
+  }
+}
